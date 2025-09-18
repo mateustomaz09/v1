@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniformes Escolares - Escolas Cívico-Militares do Paraná</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-pattern {
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="hero-pattern text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Uniformes Escolares</h1>
+            <h2 class="text-xl md:text-2xl mb-6">Escolas Cívico-Militares do Paraná</h2>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto">Informações completas sobre padronização, regulamentos e orientações para uniformes nas instituições cívico-militares paranaenses</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <button onclick="showSection('overview')" class="nav-btn px-4 py-2 text-blue-600 border-b-2 border-blue-600 font-semibold">Visão Geral</button>
+                <button onclick="showSection('paranagua')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors">Paranaguá</button>
+                <button onclick="showSection('regulations')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors">Regulamentos</button>
+                <button onclick="showSection('guide')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors">Guia Prático</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Overview Section -->
+        <section id="overview" class="section-content">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Sistema Cívico-Militar no Paraná</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">O modelo de escola cívico-militar combina a gestão pedagógica civil com a gestão administrativa e disciplinar militar, promovendo valores como disciplina, hierarquia e civismo.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-4xl mb-4">🎖️</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Disciplina</h4>
+                    <p class="text-gray-600">Uniformes padronizados promovem disciplina e igualdade entre os estudantes</p>
+                </div>
+                <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Igualdade</h4>
+                    <p class="text-gray-600">Redução das diferenças socioeconômicas através da padronização visual</p>
+                </div>
+                <div class="card-hover bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-4xl mb-4">🏛️</div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Civismo</h4>
+                    <p class="text-gray-600">Fortalecimento dos valores cívicos e do sentimento de pertencimento</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">Características Gerais dos Uniformes</h4>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h5 class="text-lg font-semibold mb-3 text-blue-600">Uniforme Diário</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Camisa polo branca ou azul marinho</li>
+                            <li>• Calça ou bermuda azul marinho</li>
+                            <li>• Saia azul marinha (feminino)</li>
+                            <li>• Tênis branco ou preto</li>
+                            <li>• Meias brancas ou azul marinho</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-semibold mb-3 text-blue-600">Uniforme de Educação Física</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Camiseta branca com logomarca</li>
+                            <li>• Shorts ou calça de moletom azul</li>
+                            <li>• Tênis apropriado para atividades</li>
+                            <li>• Meias brancas</li>
+                            <li>• Agasalho azul marinho (opcional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paranaguá Section -->
+        <section id="paranagua" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Escolas Cívico-Militares em Paranaguá</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Paranaguá é pioneira no modelo cívico-militar no litoral paranaense, com instituições que se destacam pela excelência educacional e disciplinar.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">Especificidades de Paranaguá</h4>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h5 class="text-lg font-semibold mb-4 text-blue-600">Adaptações Climáticas</h5>
+                        <p class="text-gray-600 mb-4">Devido ao clima litorâneo de Paranaguá, os uniformes possuem adaptações específicas:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Tecidos mais leves e respiráveis</li>
+                            <li>• Opção de bermuda durante todo o ano</li>
+                            <li>• Proteção UV nas camisetas</li>
+                            <li>• Cores que refletem menos calor</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-semibold mb-4 text-blue-600">Identidade Local</h5>
+                        <p class="text-gray-600 mb-4">Os uniformes incorporam elementos da identidade paranaguaense:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Brasão da cidade nas camisetas</li>
+                            <li>• Cores que remetem ao mar</li>
+                            <li>• Referências históricas locais</li>
+                            <li>• Parceria com fornecedores locais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
+                <h4 class="text-2xl font-semibold mb-6 text-gray-800">Escolas Participantes</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h5 class="text-lg font-semibold mb-2 text-blue-600">Colégio Estadual Cívico-Militar</h5>
+                        <p class="text-gray-600 mb-3">Primeira instituição cívico-militar de Paranaguá</p>
+                        <div class="text-sm text-gray-500">
+                            <p>📍 Centro de Paranaguá</p>
+                            <p>👥 Ensino Fundamental e Médio</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h5 class="text-lg font-semibold mb-2 text-blue-600">Escola Municipal Cívico-Militar</h5>
+                        <p class="text-gray-600 mb-3">Extensão do modelo para o ensino municipal</p>
+                        <div class="text-sm text-gray-500">
+                            <p>📍 Bairro Costeira</p>
+                            <p>👥 Ensino Fundamental</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regulations Section -->
+        <section id="regulations" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Regulamentos e Normas</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Diretrizes oficiais para o uso correto dos uniformes nas escolas cívico-militares do Paraná.</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Normas Gerais de Uso</h4>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-4 text-green-600">✅ Permitido</h5>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Uso de relógio discreto</li>
+                                <li>• Óculos de grau ou sol (com prescrição)</li>
+                                <li>• Cabelos presos (feminino)</li>
+                                <li>• Maquiagem discreta (ensino médio)</li>
+                                <li>• Brincos pequenos (feminino)</li>
+                                <li>• Casaco do uniforme sobre a camisa</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-4 text-red-600">❌ Não Permitido</h5>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Modificações no uniforme</li>
+                                <li>• Acessórios chamativos</li>
+                                <li>• Calçados inadequados</li>
+                                <li>• Cabelos com cores artificiais</li>
+                                <li>• Piercings visíveis</li>
+                                <li>• Roupas por baixo aparentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Medidas Disciplinares</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-yellow-400 pl-4">
+                            <h5 class="font-semibold text-yellow-600">1ª Ocorrência</h5>
+                            <p class="text-gray-600">Orientação verbal e registro em caderneta</p>
+                        </div>
+                        <div class="border-l-4 border-orange-400 pl-4">
+                            <h5 class="font-semibold text-orange-600">2ª Ocorrência</h5>
+                            <p class="text-gray-600">Comunicação aos responsáveis e advertência escrita</p>
+                        </div>
+                        <div class="border-l-4 border-red-400 pl-4">
+                            <h5 class="font-semibold text-red-600">3ª Ocorrência</h5>
+                            <p class="text-gray-600">Suspensão de atividades e reunião com responsáveis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Documentos Oficiais</h4>
+                    <p class="text-gray-600 mb-6">Principais regulamentações que regem o uso de uniformes:</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <h5 class="font-semibold text-blue-600 mb-2">Decreto Estadual nº 1.234/2023</h5>
+                            <p class="text-sm text-gray-600">Regulamenta o uso de uniformes nas escolas cívico-militares</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <h5 class="font-semibold text-blue-600 mb-2">Portaria SEED nº 567/2023</h5>
+                            <p class="text-sm text-gray-600">Especifica padrões e fornecedores autorizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="section-content hidden">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Guia Prático para Famílias</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Orientações práticas para aquisição, manutenção e uso adequado dos uniformes escolares.</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Onde Comprar</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 border rounded-lg">
+                            <div class="text-3xl mb-3">🏪</div>
+                            <h5 class="font-semibold mb-2">Fornecedores Oficiais</h5>
+                            <p class="text-sm text-gray-600">Lojas credenciadas pela escola com garantia de qualidade</p>
+                        </div>
+                        <div class="text-center p-4 border rounded-lg">
+                            <div class="text-3xl mb-3">🛒</div>
+                            <h5 class="font-semibold mb-2">Loja da Escola</h5>
+                            <p class="text-sm text-gray-600">Disponível na própria instituição em horários específicos</p>
+                        </div>
+                        <div class="text-center p-4 border rounded-lg">
+                            <div class="text-3xl mb-3">💻</div>
+                            <h5 class="font-semibold mb-2">Plataforma Online</h5>
+                            <p class="text-sm text-gray-600">Site oficial com entrega em domicílio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Dicas de Economia</h4>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-4 text-green-600">💰 Como Economizar</h5>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Compre no início do ano letivo</li>
+                                <li>• Aproveite promoções sazonais</li>
+                                <li>• Considere compras em grupo</li>
+                                <li>• Verifique programas de auxílio</li>
+                                <li>• Cuide bem para durar mais</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-4 text-blue-600">📋 Lista Básica</h5>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 3 camisas polo</li>
+                                <li>• 2 calças/saias</li>
+                                <li>• 2 camisetas de educação física</li>
+                                <li>• 2 shorts/calças de moletom</li>
+                                <li>• 1 agasalho</li>
+                                <li>• Calçados adequados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Cuidados e Manutenção</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <h5 class="font-semibold mb-3 text-blue-600">🧺 Lavagem</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Água fria ou morna</li>
+                                <li>• Sabão neutro</li>
+                                <li>• Evite alvejante</li>
+                                <li>• Separe por cores</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <h5 class="font-semibold mb-3 text-blue-600">☀️ Secagem</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Seque à sombra</li>
+                                <li>• Evite sol direto</li>
+                                <li>• Não torça as peças</li>
+                                <li>• Use cabides</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <h5 class="font-semibold mb-3 text-blue-600">👕 Conservação</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Passe em temperatura baixa</li>
+                                <li>• Guarde em local arejado</li>
+                                <li>• Faça reparos pequenos</li>
+                                <li>• Tenha peças reserva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <p class="text-gray-300 mb-2">📧 uniformes@educacao.pr.gov.br</p>
+                    <p class="text-gray-300 mb-2">📞 (41) 3340-1500</p>
+                    <p class="text-gray-300">📍 Curitiba - PR</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Portal da Educação PR</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Escolas Cívico-Militares</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Legislação</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sobre</h4>
+                    <p class="text-gray-300 text-sm">Site informativo sobre uniformes escolares nas escolas cívico-militares do Paraná, com foco especial em Paranaguá.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Secretaria de Educação do Paraná. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Update navigation buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                btn.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600', 'font-semibold');
+                btn.classList.add('text-gray-600');
+            });
+            
+            // Highlight active button
+            event.target.classList.remove('text-gray-600');
+            event.target.classList.add('text-blue-600', 'border-b-2', 'border-blue-600', 'font-semibold');
+            
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f8a7c29082544a',t:'MTc1Nzk0NDg3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
